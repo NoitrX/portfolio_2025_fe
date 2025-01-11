@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
@@ -33,13 +34,19 @@ export default function Navbar() {
           >
             <ul className="menu md:menu-horizontal gap-2 p-0 text-sm max-md:mt-2">
               <li>
-                <a className="tracking-[1px]" href="#">Home</a>
+                <Link href={"/"} className="tracking-[1px]">
+                  Home
+                </Link>
               </li>
               <li>
-                <a className="tracking-[1px]" href="#">About Me</a>
+                <Link className="tracking-[1px]" href={"/about"}>
+                  About Me
+                </Link>
               </li>
               <li>
-                <a className="tracking-[1px]" href="#">Works</a>
+                <a className="tracking-[1px]" href={"/works"}>
+                  Works
+                </a>
               </li>
             </ul>
           </div>

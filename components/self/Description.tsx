@@ -24,9 +24,12 @@ export default function Description() {
               skilled in graphic design, ensuring cohesive and impactful visuals
               for your brand.
               <br />I specialize in creating custom websites using the latest
-              technology and design trends, including the likes of React ,Next
-              Js, PHP Or Laravel, and also I can create websites using
-              wordpress. Then I was also able to make a design / graphic design
+              technology and design trends, including the likes of{" "}
+              <span className="font-bold text-blue-500">
+                React ,Next Js, PHP Or Laravel, and also I can create websites
+                using wordpress.
+              </span>{" "}
+              Then I was also able to make a design / graphic design
             </p>
             <div
               className="flex flex-row justify-center lg:justify-normal gap-4 mt-2

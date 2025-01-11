@@ -127,6 +127,8 @@ export const Header = () => {
           functionality to bring ideas to life.
         </p>
       </div>
+
+      
     </div>
   );
 };

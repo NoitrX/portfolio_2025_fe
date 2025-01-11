@@ -3,6 +3,9 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import FlyonuiScript from "@/components/FlyonuiScript";
 import "./globals.css";
 import Footer from "@/components/self/Footer";
+import Navbar from "@/components/self/Navbar";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const getJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -20,10 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${getJakartaSans.className} antialiased`}>
-        {children}
-        <Footer />
-      </body>
+      <Suspense fallback={<Loading />}>
+        <body className={`${getJakartaSans.className} antialiased`}>
+          <div className="w-full p-0 lg:p-8">
+            <Navbar />
+            {children}
+          </div>
+          <Footer />
+        </body>
+      </Suspense>
       <FlyonuiScript />
     </html>
   );

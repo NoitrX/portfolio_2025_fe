@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </nav>
         <aside>
-          <p>Copyright © 2024 - All right reserved by NoitrX</p>
+          <p className="text-xs">Copyright © 2024 - All right reserved by NoitrX</p>
         </aside>
       </footer>
     </div>

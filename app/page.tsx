@@ -1,10 +1,6 @@
 "use client";
-import Navbar from "@/components/self/Navbar";
 import { HeroParallax } from "@/components/ui/HeroParallax";
-
-import Description from "@/components/self/Description";
-import WhatIDo from "@/components/self/WhatIDo";
-import BrowseExperience from "@/components/self/BrowseExperience";
+import Link from "next/link";
 
 const products = [
   {
@@ -35,18 +31,35 @@ const products = [
 export default function Home() {
   return (
     <>
-      <div className="w-full p-0 lg:p-8 ">
-        <Navbar />
+      <div className="">
         <HeroParallax products={products} />
+        <div className="mt-2 flex flex-col px-8 lg:px-28">
+          <h3 className="text-6xl font-bold text-black">
+            Transforming your vision into a dynamic web experience through
+            meticulously crafted designs
+          </h3>
+          <div className="flex justify-between items-center mt-4">
+            <div className="flex flex-col basis-1/2">
+              <p>
+                Focus on growing your business while I take care of
+                professionally presenting it flawlessly in the digital world,
+                and make a Business Solution for All
+              </p>
+              <Link
+                className="btn w-48 btn-gradient text-lg font-bold mt-3"
+                href={"/about"}
+              >
+                ABOUT ME
+              </Link>
+            </div>
 
+            <div className="flex flex-col gap-12 justify-end text-sm">
+              <h4>WEB DEVELOPMENT</h4>
+              <h4>GRAPHIC DESIGN</h4>
+            </div>
+          </div>
+        </div>
         {/* Section For Design */}
-        <Description />
-        {/* Picture Section */}
-
-        <WhatIDo />
-
-        {/* Experience */}
-        <BrowseExperience />
       </div>
     </>
   );

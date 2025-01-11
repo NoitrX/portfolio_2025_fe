@@ -38,7 +38,7 @@ export default function BrowseExperience() {
     <div>
       <div className="w-full px-8 lg:px-28 mt-12 ">
         <hr className="border border-black mb-2 opacity-30" />
-        <h1 className="text-black font-bold text-center uppercase text-7xl ">
+        <h1 className="text-black font-bold text-center uppercase text-xl lg:text-7xl ">
           EXPERIENCES
         </h1>
         <hr className="border border-black mb-2 mt-3 opacity-30" />
