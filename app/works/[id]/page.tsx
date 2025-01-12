@@ -1,27 +1,23 @@
 "use client";
+import DetailProject from "@/components/self/DetailProject";
 import { Project } from "@/types/interface";
-import Image from "next/image";
-import React, { useState } from "react";
+
+import { useParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 export default function WorkDetails() {
   const [detailProjects, setDetailProjects] = useState<Project[]>([]);
+  const { id } = useParams<{ id: string }>();
+  useEffect(() => {
+    const result = fetch(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/projects/${id}`
+    ).then((res) => res.json());
+    result.then((data) => setDetailProjects(data.data));
+  }, [id]);
+
   return (
     <div>
-      <div className="px-8 lg:px-28 py-16">
-        <h4 className="font-semibold text-xl">Developed Project</h4>
-        <h2 className="text-black font-bold text-5xl">Carbonext</h2>
-
-        <div className=" mt-12">
-          <Image
-            src="/image/Delisa.PNG"
-            alt="My Project"
-            className="w-full h-auto rounded-md"
-            width={0}
-            height={0}
-            sizes="100vw"
-          />
-        </div>
-      </div>
+      <DetailProject projects={detailProjects} />
     </div>
   );
 }

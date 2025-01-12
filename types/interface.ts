@@ -21,17 +21,16 @@ export interface Project {
   date_project: string;
   client_name: string;
   services: string;
-  website_link: string;
-  ProjectPhotos: ProjectPhotos[];
-  ProjectFeatures: ProjectFeatures[];
-  ProjectTeches: ProjectTeches[];
+  photos: ProjectPhotos[];
+  features: ProjectFeatures[];
+  teches: ProjectTeches[];
 }
 
 interface ProjectPhotos {
   id: number;
   photo: string;
 }
-interface ProjectFeatures {
+export interface ProjectFeatures {
   id: number;
   name: string;
   description: string;

@@ -10,11 +10,12 @@ interface ProjectProps {
   project_name: string;
   thumbnail: string;
   services: string;
-  date_project: string
+  date_project: string;
 }
 
 export default function Works() {
   const [projects, setProjects] = useState<ProjectProps[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -35,8 +36,10 @@ export default function Works() {
       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/projects`
     ).then((res) => res.json());
     result.then((data) => setProjects(data.data));
+    setIsLoading(false);
   }, []);
 
+  if (isLoading) return <div className="text-center">Loading...</div>;
   console.log(projects);
   return (
     <main ref={container} className={`flex flex-col `}>
@@ -49,21 +52,25 @@ export default function Works() {
         </h4>
       </div>
 
-      {projects.map((project, i) => {
-        const targetScale = 1 - (projects.length - i) * 0.05;
-        return (
-          <Link href={`/works/${project.id}`} key={project.id}>
-            <Card
-              key={`p_${i}`}
-              progress={scrollYProgress}
-              range={[i * 0.25, 1]}
-              targetScale={targetScale}
-              {...project}
-              i={i}
-            />
-          </Link>
-        );
-      })}
+      {isLoading ? (
+        <div className="text-center">Loading...</div>
+      ) : (
+        projects.map((project, i) => {
+          const targetScale = 1 - (projects.length - i) * 0.05;
+          return (
+            <Link href={`/works/${project.id}`} key={project.id}>
+              <Card
+                key={`p_${i}`}
+                progress={scrollYProgress}
+                range={[i * 0.25, 1]}
+                targetScale={targetScale}
+                {...project}
+                i={i}
+              />
+            </Link>
+          );
+        })
+      )}
     </main>
   );
 }
