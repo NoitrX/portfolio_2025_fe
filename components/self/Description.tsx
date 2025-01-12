@@ -35,13 +35,17 @@ export default function Description() {
               className="flex flex-row justify-center lg:justify-normal gap-4 mt-2
                   "
             >
-              <Link href={"#"}>
+              <Link href={"https://www.linkedin.com/in/naufhal-zakwan/"}>
                 <FaLinkedin className="text-xl" />
               </Link>
-              <Link href={"#"}>
+              <Link
+                href={
+                  "mailto:naufhalsimdigxrpl2@gmail.com?subject=Hello%20Naufhal&body=I%20Want%20to%20Ask%20."
+                }
+              >
                 <MdMailOutline className="text-xl" />
               </Link>
-              <Link href={"#"}>
+              <Link href={"https://wa.me/085157292447?text=Hello%20Naufhal!"}>
                 <FaWhatsapp className="text-xl" />
               </Link>
             </div>

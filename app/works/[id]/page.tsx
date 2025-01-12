@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 export default function WorkDetails() {
-  const [detailProjects, setDetailProjects] = useState<Project[]>([]);
+  const [detailProjects, setDetailProjects] = useState<Project | null>(null);
   const { id } = useParams<{ id: string }>();
   useEffect(() => {
     const result = fetch(
@@ -15,6 +15,7 @@ export default function WorkDetails() {
     result.then((data) => setDetailProjects(data.data));
   }, [id]);
 
+  if (!detailProjects) return <div>Data Tidak Ditemukan...</div>;
   return (
     <div>
       <DetailProject projects={detailProjects} />

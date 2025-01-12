@@ -117,7 +117,10 @@ export const Header = () => {
       </p>
 
       <div className="mt-4 flex flex-col lg:flex-row justify-between gap-20">
-        <Link className="btn w-48 btn-gradient text-lg font-bold" href={""}>
+        <Link
+          className="btn w-48 btn-gradient text-lg font-bold"
+          href={"https://www.linkedin.com/in/naufhal-zakwan/"}
+        >
           Lets Talk
         </Link>
 
@@ -127,8 +130,6 @@ export const Header = () => {
           functionality to bring ideas to life.
         </p>
       </div>
-
-      
     </div>
   );
 };
@@ -155,10 +156,7 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
+      <Link href={`/works`} className="block group-hover/product:shadow-2xl ">
         <Image
           src={product.thumbnail}
           height="600"
