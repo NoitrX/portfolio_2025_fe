@@ -15,7 +15,7 @@ export default function WorkDetails() {
     result.then((data) => setDetailProjects(data.data));
   }, [id]);
 
-  if (!detailProjects) return <div>Data Tidak Ditemukan...</div>;
+  if (!detailProjects) return <div>Data Not Found...</div>;
   return (
     <div>
       <DetailProject projects={detailProjects} />
