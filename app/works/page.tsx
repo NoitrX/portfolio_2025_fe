@@ -40,7 +40,7 @@ export default function Works() {
   }, []);
 
   if (isLoading) return <div className="text-center">Loading...</div>;
-  console.log(projects);
+  console.log(projects, "Ini Projects");
   return (
     <main ref={container} className={`flex flex-col `}>
       <div className=" px-8 py-12 lg:px-40">

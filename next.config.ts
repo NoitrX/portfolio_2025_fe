@@ -11,6 +11,13 @@ const nextConfig: NextConfig = {
         pathname: "/storage/**",
         search: "",
       },
+
+      {
+        protocol: "https",
+        hostname: "testing.ayamjuraganmuda.org/public/api/projects",
+        pathname: "/storage/**",
+        search: "",
+      },
     ],
   },
 };
