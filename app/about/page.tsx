@@ -14,10 +14,10 @@ export default function page() {
       <WhatIDo />
 
       {/* Experience */}
-      <BrowseExperience />
+      {/* <BrowseExperience /> */}
 
       {/* Awards */}
-      <BrowseAwards />
+      {/* <BrowseAwards /> */}
     </div>
   );
 }
