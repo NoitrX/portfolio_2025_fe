@@ -3,6 +3,8 @@
 import React from "react";
 import Description from "@/components/self/Description";
 import WhatIDo from "@/components/self/WhatIDo";
+import BrowseExperience from "@/components/self/BrowseExperience";
+import BrowseAwards from "@/components/self/BrowseAwards";
 // import BrowseExperience from "@/components/self/BrowseExperience";
 // import BrowseAwards from "@/components/self/BrowseAwards";
 export default function page() {
@@ -14,10 +16,10 @@ export default function page() {
       <WhatIDo />
 
       {/* Experience */}
-      {/* <BrowseExperience /> */}
+      <BrowseExperience />
 
       {/* Awards */}
-      {/* <BrowseAwards /> */}
+      <BrowseAwards />
     </div>
   );
 }
