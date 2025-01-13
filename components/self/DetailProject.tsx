@@ -17,7 +17,7 @@ export default function DetailProject({ projects }: ProjectProps) {
 
         <div className=" mt-12">
           <Image
-            src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${projects.thumbnail}`}
+            src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/public/storage/${projects.thumbnail}`}
             alt="My Project"
             className="w-full h-auto rounded-md"
             width={0}
@@ -77,7 +77,7 @@ export default function DetailProject({ projects }: ProjectProps) {
               {projects.photos?.map((photo) => (
                 <Image
                   key={photo.id}
-                  src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${photo.photo}`}
+                  src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/public/storage/${photo.photo}`}
                   alt="My Project"
                   className="w-full h-auto rounded-md"
                   width={0}
