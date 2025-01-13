@@ -47,7 +47,7 @@ const Card = ({
             <motion.div className={styles.inner} style={{ scale: imageScale }}>
               <Image
                 fill
-                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/storage/${thumbnail}`}
+                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/public/storage/${thumbnail}`}
                 alt="image"
               />
             </motion.div>
