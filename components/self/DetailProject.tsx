@@ -11,7 +11,7 @@ export default function DetailProject({ projects }: ProjectProps) {
     <div>
       <div className="px-8 lg:px-28 py-16">
         <h4 className="font-semibold text-xl">Developed Project</h4>
-        <h2 className="text-black font-bold text-5xl">
+        <h2 className="text-black font-bold text-xl lg:text-5xl">
           {projects.project_name}
         </h2>
 

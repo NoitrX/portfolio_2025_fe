@@ -53,7 +53,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-12 justify-end text-sm">
+            <div className="flex flex-col gap-12 justify-end text-sm mt-4">
               <h4>WEB DEVELOPMENT</h4>
               <h4>GRAPHIC DESIGN</h4>
             </div>
