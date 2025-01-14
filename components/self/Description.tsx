@@ -51,7 +51,9 @@ export default function Description() {
             </div>
             <Link
               className="btn w-48 btn-gradient text-lg font-bold mt-3 mb-3"
-              href={""}
+              href={
+                "https://drive.google.com/file/d/1EJt7j0_26KnERYeY_fJUUUkpgjcw91UZ/view?usp=sharing"
+              }
             >
               MY RESUME
             </Link>

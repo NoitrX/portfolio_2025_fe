@@ -1,4 +1,3 @@
-import { convertDate } from "@/types/helper";
 import type { Experience } from "@/types/interface";
 
 export default function ExperiencePart({ experience }: ExperienceProps) {
@@ -13,8 +12,7 @@ export default function ExperiencePart({ experience }: ExperienceProps) {
           <h5 className="text-sm">{experience.company}</h5>
         </div>
         <h4 className="text-sm">
-          {convertDate(experience.start_date)} -{" "}
-          {convertDate(experience.end_date)}
+          {experience.start_date} -{experience.end_date}
         </h4>
       </div>
     </div>
