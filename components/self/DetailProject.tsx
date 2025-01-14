@@ -73,7 +73,7 @@ export default function DetailProject({ projects }: ProjectProps) {
               </ul>
             </div>
             {/* For Image */}
-            <div className="flex flex-col gap-7">
+            <div className="flex flex-col gap-12">
               {projects.photos?.map((photo) => (
                 <Image
                   key={photo.id}
