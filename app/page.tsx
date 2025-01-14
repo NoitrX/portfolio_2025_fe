@@ -34,13 +34,13 @@ export default function Home() {
       <div className="">
         <HeroParallax products={products} />
         <div className="mt-2 flex flex-col px-8 lg:px-28">
-          <h3 className="text-6xl font-bold text-black">
+          <h3 className="text-lg  lg:text-6xl font-bold text-black">
             Transforming your vision into a dynamic web experience through
             meticulously crafted designs
           </h3>
-          <div className="flex justify-between items-center mt-4">
+          <div className="flex flex-col lg:flex-row justify-between items-center mt-4 mb-4">
             <div className="flex flex-col basis-1/2">
-              <p>
+              <p className="text-sm lg:text-base ">
                 Focus on growing your business while I take care of
                 professionally presenting it flawlessly in the digital world,
                 and make a Business Solution for All

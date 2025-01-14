@@ -26,7 +26,7 @@ export default function DetailProject({ projects }: ProjectProps) {
           />
         </div>
 
-        <div className="flex flex-col lg:gap-12 gap-8 lg:flex-row justify-around px-16 py-16">
+        <div className="flex flex-col lg:gap-12 gap-8 lg:flex-row justify-around px-8 lg:px-16 py-16">
           {/* For Date Section */}
           <div className="flex flex-col gap-6">
             {/* Date */}
