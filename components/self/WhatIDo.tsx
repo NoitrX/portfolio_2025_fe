@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaCode } from "react-icons/fa";
 import { MdOutlineEditLocation } from "react-icons/md";
 import { BsCast } from "react-icons/bs";
-import { BiImages } from "react-icons/bi";
 export default function WhatIDo() {
   return (
     <div>
