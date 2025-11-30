@@ -17,19 +17,16 @@ export default function Description() {
           </h3>
           <div className="flex flex-col justify-center items-center lg:items-start lg:justify-normal mt-2 ">
             <p className="text-justify">
-              Hi, I`&apos;m Naufhal. Experienced 1 Years and specialize in
-              creating innovative applications and websites with exceptional
-              design and functionality. With a passion for combining aesthetics
-              and technology, I deliver solutions that stand out. I’m also
-              skilled in graphic design, ensuring cohesive and impactful visuals
-              for your brand.
-              <br />I specialize in creating custom websites using the latest
-              technology and design trends, including the likes of{" "}
+              Hi, I’m Naufhal — a Fullstack Developer and freelancer with over a
+              year of experience building modern, scalable, and user-focused web
+              applications.
+              <br />I focus on clean architecture, efficient functionality, and
+              delivering results that support real business growth.
               <span className="font-bold text-blue-500">
-                React ,Next Js, PHP Or Laravel, and also I can create websites
-                using wordpress.
+                I specialize in creating custom websites and landing pages using
+                modern technologies like Laravel, React, Next.js, and I also
+                have experience building websites with WordPress.
               </span>{" "}
-              Then I was also able to make a design / graphic design
             </p>
             <div
               className="flex flex-row justify-center lg:justify-normal gap-4 mt-2
@@ -40,7 +37,7 @@ export default function Description() {
               </Link>
               <Link
                 href={
-                  "mailto:naufhalsimdigxrpl2@gmail.com?subject=Hello%20Naufhal&body=I%20Want%20to%20Ask%20."
+                  "mailto:naufhaltech@gmail.com?subject=Hello%20Naufhal&body=I%20Want%20to%20Ask%20."
                 }
               >
                 <MdMailOutline className="text-xl" />

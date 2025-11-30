@@ -13,7 +13,7 @@ export default function WhatIDo() {
         <div className="w-full flex flex-col lg:flex-row gap-8 ">
           <Image
             className="rounded-lg object-contain"
-            src={"/image/MYpersonal.png"}
+            src={"/image/profileImg.jpeg"}
             width={400}
             height={400}
             alt="Naufhal"
@@ -121,35 +121,7 @@ export default function WhatIDo() {
                   </div>
                 </div>
               </div>
-              <div className="accordion-item" id="graphic-icon">
-                <button
-                  className="accordion-toggle inline-flex items-center justify-between text-start"
-                  aria-controls="graphic-icon-collapse"
-                  aria-expanded="false"
-                >
-                  <span className="inline-flex items-center gap-x-4">
-                    <BiImages />
-                    Graphic Design
-                  </span>
-                  <span className="icon-[tabler--chevron-left] accordion-item-active:-rotate-90 text-base- size-4.5 shrink-0 transition-transform duration-300 rtl:-rotate-180" />
-                </button>
-                <div
-                  id="graphic-icon-collapse"
-                  className="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  aria-labelledby="graphic-icon"
-                  role="region"
-                >
-                  <div className="px-5 pb-4">
-                    <p className="text-base-content/80 font-normal">
-                      I specialize in creating visually impactful designs that
-                      effectively communicate messages and enhance brand
-                      identity. My expertise spans across various design styles
-                      and mediums, ensuring tailored solutions for each unique
-                      project.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            
             </div>
             {/* End Accordion */}
           </div>

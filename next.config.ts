@@ -14,14 +14,14 @@ const nextConfig: NextConfig = {
 
       {
         protocol: "https",
-        hostname: "testing.ayamjuraganmuda.org",
+        hostname: "backend.naufhalzakwan.my.id",
         pathname: "/storage/**",
         search: "",
       },
 
       {
         protocol: "https",
-        hostname: "testing.ayamjuraganmuda.org",
+        hostname: "backend.naufhalzakwan.my.id",
         pathname: "/public/storage/**",
         search: "",
       },
